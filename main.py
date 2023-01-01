@@ -33,6 +33,7 @@ while game_is_on:
     for car in car_manager.allcars:
         if  car.distance(player)<20:
             game_is_on=False
+            soreboard.game_over()
             break
 
     if player.ycor()>280:
